@@ -8,7 +8,8 @@ const converter = document.getElementById("converter");
 
 async function getWeather(city) {
   try {
-    const request = `http://api.weatherapi.com/v1/forecast.json?key=69a77ece90e4469aa0e120700241804&q=${city}&days=3&aqi=no&alerts=no`;
+    const request = `https://api.weatherapi.com/v1/forecast.json?key=69a77ece90e4469aa0e120700241804&q=${city}&days=3&aqi=no&alerts=no
+`;
     const res = await fetch(request, { mode: "cors" });
     const info = await res.json();
     info.forecast.forecastday.forEach((day) => {
