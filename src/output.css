@@ -614,6 +614,10 @@ video {
   justify-content: space-around;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
