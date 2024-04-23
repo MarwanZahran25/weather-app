@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col items-center justify-center bg-emerald-500"
+  >
+    <div id="container" class="flex justify-center gap-5">
+      <div
+        id="today"
+        class="flex h-72 w-60 flex-col items-center justify-center gap-3 rounded-xl bg-white font-serif font-bold shadow-xl"
+      >
+        <div id="the-day1">Today</div>
+        <div id="city-feild1" class="font-serif text-5xl">cairo</div>
+        <div id="temp-feild1" class="text-6xl">25°C</div>
+      </div>
+      <div
+        id="next-day"
+        class="flex h-72 w-60 flex-col items-center justify-center gap-3 rounded-xl bg-white font-serif font-bold shadow-xl"
+      >
+        <div id="the-day2"></div>
+        <div id="city-feild2" class="font-serif text-5xl">cairo</div>
+        <div id="temp-feild2" class="text-6xl">25°C</div>
+      </div>
+      <div
+        id="day-after"
+        class="flex h-72 w-60 flex-col items-center justify-center gap-3 rounded-xl bg-white font-serif font-bold shadow-xl"
+      >
+        <div id="the-day3"></div>
+        <div id="city-feild3" class="font-serif text-5xl">cairo</div>
+        <div id="temp-feild3" class="text-6xl">25°C</div>
+      </div>
+    </div>
+  </body>
+</html>

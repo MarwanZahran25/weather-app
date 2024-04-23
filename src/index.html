@@ -8,14 +8,33 @@
     <script src="./script.js" defer></script>
   </head>
   <body
-    class="flex min-h-screen flex-col items-center justify-center bg-emerald-500"
+    class="flex min-h-screen flex-col items-center justify-around bg-emerald-500"
   >
-    <div
-      id="main-content"
-      class="flex h-72 w-60 flex-col items-center justify-center gap-3 rounded-xl bg-white font-serif font-bold shadow-xl"
-    >
-      <div id="city-feild" class="font-serif text-5xl">cairo</div>
-      <div id="temp-feild" class="text-6xl">25°C</div>
+    <form class="top-14 flex gap-5">
+      <button
+        type="button"
+        class="h-9 w-28 rounded-md bg-red-400 text-center font-medium text-white shadow-md"
+        id="converter"
+      >
+        Fehranahite
+      </button>
+      <input
+        type="search"
+        placeholder="search a city"
+        class="h-9 rounded-md px-2 pl-3 shadow"
+        id="search"
+      />
+      <button
+        type="submit"
+        class="h-9 w-28 rounded-md bg-blue-400 text-center font-medium text-white shadow-md"
+      >
+        Search
+      </button>
+    </form>
+    <div id="city-field" class="top-28 text-7xl font-bold text-white">
+      cairo
     </div>
+
+    <div id="container" class="mt-[-100px] flex justify-center gap-5"></div>
   </body>
 </html>
