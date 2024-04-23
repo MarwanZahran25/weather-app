@@ -60,13 +60,8 @@ async function makeForecast(city) {
 }
 makeForecast("cairo");
 function removeAllCards() {
-  // Assuming container has a unique ID:
-
-  // Assuming cards are selected and stored in an array:
-  const allCards = container.childNodes; // (or adjust selector as needed)
-
-  // Create a copy of the cards array to avoid DOM manipulation issues:
-  const cardsToRemove = [...allCards]; // Spread operator to create a copy
+  const allCards = container.childNodes;
+  const cardsToRemove = [...allCards];
 
   cardsToRemove.forEach((card) => {
     container.removeChild(card);
