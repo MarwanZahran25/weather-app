@@ -71,7 +71,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
   try {
     e.preventDefault();
     removeAllCards();
-    city = document.querySelector("input").value;
+    city = document.querySelector("input").value||"cairo";
     makeForecast(city);
   } catch (error) {
     return null;
